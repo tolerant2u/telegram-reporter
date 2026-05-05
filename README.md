@@ -1,37 +1,129 @@
-# Telegram Multi-Reporter
+````markdown
+# Telegram Bot Reporter Helper
 
-Multi-account reporting tool for Telegram bots using Pyrogram with proxy rotation, session health checks, and multiple report reasons.
+A simple helper project for preparing structured abuse reports about Telegram bots.  
+The tool is intended for educational, defensive, and moderation-assistance purposes only.
 
-**⚠️ DISCLAIMER: THIS TOOL IS FOR REPORTING BOTS ONLY. DO NOT USE AGAINST REAL USERS.**
+> ⚠️ **Disclaimer:** This project must only be used for legitimate reports against bots that violate Telegram rules. Do not use it for harassment, false reports, spam, brigading, or attacks against real users.
 
 ---
 
 ## Features
 
-- ✅ **Multiple accounts** — load unlimited `.session` files
-- ✅ **Proxy rotation** — random SOCKS5/HTTP proxies from pool
-- ✅ **Session health check** — auto-detect and skip dead sessions
-- ✅ **8 report reasons** — Spam, Violence, Pornography, Child Abuse, Fake, Copyright, Personal Details, Other
-- ✅ **EN/RU language support** — switch interface language
-- ✅ **Real report message** — sends descriptive complaint text with each report
+- ✅ **Bot-focused reporting workflow**
+- ✅ **Session health check**
+- ✅ **Multiple report categories**
+- ✅ **English and Russian interface support**
+- ✅ **Structured complaint messages**
+- ✅ **Simple text-based configuration**
 
 ---
 
-## Disclaimer
+## Report Reasons
 
-This project is provided for educational and defensive purposes only. The author is not responsible for any misuse of this software. By using this tool, you assume all legal and ethical responsibility for your actions.
+Supported report categories:
+
+- Spam
+- Violence
+- Pornography
+- Child Abuse
+- Fake / Impersonation
+- Copyright Violation
+- Personal Details
+- Other
+
+---
+
+## How It Works
+
+Before starting, the script checks available Telegram sessions and verifies whether they can connect successfully.
+
+After that, the user can choose a report reason and prepare a structured complaint message for a suspicious or abusive Telegram bot.
+
+---
+
+## Setup
+
+### 1. Get Telegram API Credentials
+
+Go to [my.telegram.org](https://my.telegram.org), open **API development tools**, and create an application.
+
+Then replace the values in `main.py`:
+
+```python
+API_ID = 123456
+API_HASH = "your_api_hash_here"
+````
+
+### 2. Add Your Session File
+
+Place your Pyrogram `.session` file in the project folder.
+
+Then add it to `sessions.txt`:
+
+```txt
+my_session.session
+```
+
+> Use only your own Telegram account/session. Do not use purchased, stolen, shared, or unauthorized sessions.
+
+### 3. Optional: Configure Connection
+
+If your environment requires a proxy for legitimate connectivity reasons, configure it according to your local laws, Telegram rules, and hosting provider policies.
+
+Do not use proxies to evade limits, hide abuse, or automate mass actions.
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run
+
+```bash
+python main.py
+```
 
 ---
 
 ## Language Support
 
 | Language | Interface | Report Messages |
-|----------|-----------|-----------------|
-| English | ✅ | ✅ |
-| Русский | ✅ | ✅ |
+| -------- | --------- | --------------- |
+| English  | ✅         | ✅               |
+| Русский  | ✅         | ✅               |
+
+---
+
+## Responsible Use
+
+This project is intended only for:
+
+* Reporting malicious bots
+* Documenting abuse
+* Learning how Telegram API-based tools are structured
+* Defensive moderation workflows
+
+This project must not be used for:
+
+* False reporting
+* Mass reporting
+* Harassment
+* Targeting real users
+* Evading Telegram limits
+* Using unauthorized accounts or sessions
+
+---
+
+## Disclaimer
+
+This software is provided for educational and defensive purposes only.
+
+The author is not responsible for misuse of this software. By using this project, you accept full legal and ethical responsibility for your actions.
 
 ---
 
 ## License
 
-MIT License — do whatever you want, but don't blame me.
+MIT License
