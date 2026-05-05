@@ -37,4 +37,3 @@ This project is provided for educational and defensive purposes only. The author
 ## License
 
 MIT License — do whatever you want, but don't blame me.
-ENDOFFILE
