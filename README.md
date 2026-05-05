@@ -1,5 +1,3 @@
-cd /Users/tolerant2u/PycharmProjects/Telegramm_reporter
-cat > README.md << 'ENDOFFILE'
 # Telegram Multi-Reporter
 
 Multi-account reporting tool for Telegram bots using Pyrogram with proxy rotation, session health checks, and multiple report reasons.
