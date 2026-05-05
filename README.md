@@ -1,4 +1,4 @@
-````markdown
+
 # Telegram Bot Reporter Helper
 
 A simple helper project for preparing structured abuse reports about Telegram bots.  
