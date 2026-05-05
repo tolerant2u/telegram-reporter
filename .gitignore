@@ -1,0 +1,6 @@
+proxies.txt
+sessions.txt
+*.session
+.venv/
+.DS_Store
+__pycache__/

@@ -1,0 +1,4 @@
+pyrogram>=2.0.0
+tgcrypto>=1.2.5
+python-socks>=2.0.0
+telethon>=1.31.0
