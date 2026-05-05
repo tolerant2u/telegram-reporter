@@ -4,3 +4,9 @@ sessions.txt
 .venv/
 .DS_Store
 __pycache__/
+.idea/
+.python-version
+dead_sessions.py
+test_no_proxy.py
+vpn_switch.py
+proxy_gen.py
